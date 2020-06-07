@@ -1,0 +1,114 @@
+body{
+    background-color: #0F0F0F !important;
+    margin: 0;
+    height: 100px;
+}
+
+@font-face{
+    font-family: 'Script';
+    src: url(Fonts/mission-script-webfont.woff);
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Display';
+    src: url(Fonts/PlayfairDisplay-VariableFont_wght.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+.vl {
+    position: absolute;
+    border-left: 250px solid #339989;
+    height: 100%;
+    left: 300px;
+}
+
+.home {
+    position: absolute;
+    left: 700px;
+    top: 340px;
+    width: 870px;
+}
+
+.intro {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    margin: 0px; 
+}
+
+.name {
+    color: white;
+    font-size: 140px;
+    font-family: Script;
+    font-weight: 1;
+    margin: 0px; 
+    padding: 0px;
+    height: 140px;
+}
+
+hr {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 20px;
+    height: 4px !important;
+    background-color: #339989;   
+}
+
+h3 {
+    color: white;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.profile {
+    position: absolute;
+    top: 320px;
+    left: 220px;
+}
+
+.picstyle {
+    border-radius: 90%;
+    width: 400px;
+    border: 4px solid white;
+}
+
+header {
+    background-size: cover;
+}
+
+nav {
+    float: right;
+    margin-top: 25px;
+    margin-right: 30px;
+}
+
+nav ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    color: white;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 25px;
+    margin-left: 40px;   
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #339989;
+    text-decoration:none;
+}
