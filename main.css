@@ -43,9 +43,8 @@ p{
     font-weight: 300;
 }
 
-/*
-img {
-    width: 100% 
+/*img {
+    width: 100%; 
 }
 */
 
@@ -54,7 +53,7 @@ img {
     max-width: 120rem;
     height: 100%;
     margin: 0 auto;
-    position: relative;  
+    position: relative;
 }
 
 .has-margin-right{
@@ -162,13 +161,13 @@ li{
     text-align: center;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);       
     width: 100%;
     z-index: 1;
 }
 
 .landing-text h1{
-    font-size: 10rem;
+    font-size: 12rem;
     font-family: 'lobsterregular';
     background: linear-gradient(to top, #ffe838, #fd57bf);
     -webkit-background-clip: text;
@@ -200,13 +199,42 @@ li{
 }
 
 .profile-img{
-    flex: 1;
-    margin-right: 5rem;
+    flex: 1;     
+}
+
+.profile-block{
     width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: 5px solid #fff;*/
+    border-radius: 50%;
 }
 
 .about-details{
     flex: 1;
+}
+
+.about-details li.skills{
+    margin: 1rem;
+    font-size: 1.5rem;
+    list-style-position: inside;
+}
+
+.about-details .resume-button{
+    font-size: 1.75rem;
+    color: #fd57bf;
+    text-align: center;
+    display: inline-block;
+    padding: 1rem;
+    border: 2px solid #fd57bf;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+
+.about-details .resume-button:hover{
+    background-color: rgba(253, 87, 191, 0.1);
+    color: #fd57bf;
 }
 
 .timeline ul.line{
@@ -278,8 +306,12 @@ li{
     left: -7.9rem;
     height: 1.5rem;
     width: 1.5rem;
-    background-color: #313534;
-    
+    background-color: #313534;   
+}
+
+.research a:hover{
+    background-color: rgba(253, 87, 191, 0.1);
+    color: #fd57bf;
 }
 .projects-item{
     display: flex;
@@ -294,7 +326,7 @@ li{
 
 .projects-img{
     flex: 1;
-    width: 100%;
+    
 }
 
 .projects-description{
@@ -362,7 +394,7 @@ li{
 @media screen and (max-width: 768px) {
     body{
         width: 100%;
-        height: 100%
+        height: 100%;
         background: url("images/sitebg2.jpg") no-repeat center fixed;
         background-size: cover;
     }
@@ -387,6 +419,10 @@ li{
         font-size: 4rem;
     }
     
+    .profile-block{
+        width: 100%;
+    }
+    
     .timeline ul{
         margin: 0 0 0 auto;
     }
@@ -401,6 +437,13 @@ li{
 }
 
 @media screen and (max-width: 600px) {
+    body{
+        width: 100%;
+        height: 100%
+        background: url("images/sitebg2.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
+    
     .menu-toggler{
         top: 2rem;
         right: 2rem;
@@ -424,7 +467,7 @@ li{
     
     .profile-img {
         margin: 0 0 4rem 0;
-        width: 100px;
+        width: 250px;
     }
     
     .about-details .section-heading{
@@ -446,7 +489,7 @@ li{
     }
     
     .timeline ul{
-        left: -17px; 
+        right: px; 
     }
     
     .timeline h1{
