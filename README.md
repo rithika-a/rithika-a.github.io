@@ -11,3 +11,18 @@
 1. Activate conda environment if not already: `conda activate website_env`
 2. Run `bundle exec jekyll s`
 3. Open browser and navigate to http://localhost:4000
+
+
+# Making a new post
+
+1. jekyll draft "post title"
+2. Open the file in _drafts/post_title.md
+3. Add the post content
+    - Use the markdown viewer (cmd + shift + v) to preview the post
+4. To publish, run `jekyll publish _drafts/post_title.md`
+5. Run `jekyll s`, view at http://localhost:4000 to ensure post was published
+6. Add and push to github
+    - `git status`
+    - `git add _posts`
+    - `git commit -m "commit message"`
+    - `git push`
