@@ -2,6 +2,7 @@
 layout: post
 title: Bridging the Science-Society Divide
 date: 2025-02-15 15:44 -0800
+license: "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International"
 ---
 Science is everywhere. It shapes our daily lives in ways both visible and invisible – from the medicines we take, to the technologies we rely on, to our understanding of the natural world. Yet, despite its profound impact, science often feels distant, confined within academic walls, and accessible only to those fluent in its specialized language. As a result of this, a divide had formed where mistrust, misinformation, and misunderstanding have taken root.
 
