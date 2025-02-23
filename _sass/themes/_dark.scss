@@ -51,9 +51,9 @@
   --input-focus-border-color: rgb(112, 114, 115);
 
   /* Home page */
-  --post-list-text-color: rgb(175, 176, 177);
+  --post-list-text-color: rgb(176, 177, 175);
   --btn-patinator-text-color: var(--text-color);
-  --btn-paginator-hover-color: #2e2e2e;
+  --btn-paginator-hover-color: #e61111;
 
   /* Posts */
   --toc-highlight: rgb(127, 211, 17);
@@ -140,13 +140,13 @@
 
   #archives li:nth-child(odd) {
     background-image: linear-gradient(
-      to left,
-      rgb(26, 26, 30),
-      rgb(39, 39, 45),
-      rgb(39, 39, 45),
-      rgb(39, 39, 45),
-      rgb(26, 26, 30)
+      to right,
+      #0F222E,
+      #102437,
+      #102437,
+      #0F222E
     );
+    border-radius: 15px;
   }
 
   /* stylelint-disable-next-line selector-id-pattern */
