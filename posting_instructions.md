@@ -12,6 +12,12 @@
 2. Run `bundle exec jekyll s`
 3. Open browser and navigate to http://localhost:4000
 
+# Create new branch before posting
+
+1. `git checkout master`
+2. `git pull origin master`
+3. `git checkout -b new-branch`
+4. `git push origin new-branch`
 
 # Making a new post
 
