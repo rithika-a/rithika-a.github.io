@@ -1,12 +1,17 @@
 # Ruby Setup Instructions (on Mac)
 
 1. Install Conda: https://github.com/conda-forge/miniforge
-2. Create new conda environment: `mamba create -n website_env ruby compilers`
+2. Create new conda environment: `mamba create -n website_env ruby compilers nodejs`
 3. Activate conda environment: `conda activate website_env`
-4. Install bundle gem: `gem install bundler`
-5. From this directory, run `bundle`
+4. Install bundle gem: `gem install --user bundler`
+5. From this directory, run:
+     - `bundle`
+     - `npm install`
+     - `npm build`
+
 
 # Subsequent Steps (to view website locally)
+### Sometimes these commands don't execute in the vscode/cursor terminal. due to funky PATH setup. Use the system terminal instead
 
 1. Activate conda environment if not already: `conda activate website_env`
 2. Run `bundle exec jekyll s`
