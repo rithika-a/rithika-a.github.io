@@ -1,4 +1,5 @@
 # Ruby Setup Instructions (on Mac)
+### Only do this once!
 
 1. Install Conda: https://github.com/conda-forge/miniforge
 2. Create new conda environment: `mamba create -n website_env ruby compilers`
