@@ -4,10 +4,10 @@ icon: fas fa-info-circle
 order: 2
 ---
 
-Hello and welcome! My name is Rithika Adavikolanu, and I have been an academic researcher for 6 years across a variety of fields. I'm currently a research specialist in the Krogan Lab at The University of California, San Francisco (UCSF), where I study host-viral protein interactions using mass spectrometry-based proteomics. My research interests include infectious disease pathogenesis, host-pathogen protein-protein interactions, and cellular adaptation under pathogen infection.
+Hi and welcome -- my name is Rithika! I’m a first-year Ph.D. student at the University of California, San Francisco (UCSF), with six years of academic research experience across a variety of fields. My scientific interests center around infectious disease pathogenesis, host-pathogen protein-protein interactions, and how cells adapt under the stress of infection. In short: I love studying the molecular tug-of-war between hosts and pathogens.
 
-I am also very passionate about science communication and mentorship, and as part of this website, I have an embedded blog to communicate science to the general public. I believe that the discoveries we make as scientists are meant to be shared with the world, not just kept in academic circles. 
+Beyond the lab bench, I’m deeply passionate about science communication and mentorship. I believe science is meant to be shared — not just in academic journals, but with everyone. As part of this website, I have created a blog to break down complex research into stories that spark curiosity, understanding, and connection.
 
-Outside of the lab, I enjoy playing with my dog, being outdoors in nature, cooking new recipes, and taking care of my houseplants. 
+When I’m not pipetting or writing, you’ll likely find me hanging out with my dog, experimenting in the kitchen, getting outdoors to hike or camp, watching sports, or gently apologizing to my struggling houseplants.
 
-Thanks for stopping by -- I hope you enjoy reading about me and my work, and I look forward to connecting with you!
+Thanks for stopping by — I hope you enjoy exploring my work, and feel free to reach out via email!

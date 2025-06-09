@@ -9,11 +9,13 @@
     margin-top: 2.5rem;
   }
 
-  .card-wrapper {
+  .post-preview {
     &:hover {
       text-decoration: none;
     }
+  }
 
+  .card-wrapper {
     &:not(:last-child) {
       margin-bottom: 1.25rem;
     }
@@ -52,6 +54,7 @@
 
         color: var(--heading-color) !important;
         font-size: 1.25rem;
+        transition: color 0.35s ease-in-out;
       }
 
       %muted {
@@ -103,6 +106,10 @@
     }
   }
 } /* #post-list */
+
+#post-list .post-preview:hover .card-title {
+  color: var(--link-hover-color) !important;
+}
 
 .pagination {
   color: var(--text-color);
