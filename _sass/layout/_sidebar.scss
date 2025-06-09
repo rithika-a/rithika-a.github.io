@@ -45,7 +45,7 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
 
   %sidebar-link-hover {
     &:hover {
-      /*color: var(--sidebar-active-color);*/
+      color: var(--sidebar-hover-color);
     }
   }
 
@@ -143,6 +143,7 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
 
         &:hover {
           background-color: var(--sidebar-hover-bg);
+          color: var(--sidebar-active-color);
         }
 
         i {
@@ -204,6 +205,10 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
 
       &:hover {
         background-color: var(--sidebar-hover-bg);
+        color: var(--sidebar-active-color);
+        i {
+          color: var(--sidebar-active-color);
+        }
       }
     }
 
@@ -212,12 +217,10 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
       @extend %sidebar-link-hover;
       @extend %clickable-transition;
 
-      &:not(:last-child) {
-        margin-right: v.$sb-btn-gap;
+      margin-right: v.$sb-btn-gap;
 
-        @include bp.xxxl {
-          margin-right: v.$sb-btn-gap-lg;
-        }
+      @include bp.xxxl {
+        margin-right: v.$sb-btn-gap-lg;
       }
     }
 
@@ -229,21 +232,10 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
       @extend %button;
       @extend %sidebar-links;
       @extend %sidebar-link-hover;
-    }
-
-    .icon-border {
-      @extend %no-cursor;
-      @include mx.ml-mr(calc((v.$sb-btn-gap - $btn-border-width) / 2));
-
-      background-color: var(--sidebar-btn-color);
-      content: '';
-      width: $btn-border-width;
-      height: $btn-border-width;
-      border-radius: 50%;
-      margin-bottom: $btn-mb;
+      margin-right: v.$sb-btn-gap;
 
       @include bp.xxxl {
-        @include mx.ml-mr(calc((v.$sb-btn-gap-lg - $btn-border-width) / 2));
+        margin-right: v.$sb-btn-gap-lg;
       }
     }
   } /* .sidebar-bottom */

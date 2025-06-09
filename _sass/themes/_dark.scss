@@ -16,6 +16,7 @@
   --blockquote-text-color: #868686;
   --link-color: #d1d7df;
   --link-underline-color: #05ffea;
+  --link-hover-color: #05ffea;
   --button-bg: #242424;
   --btn-border-color: #2e2f31;
   --btn-backtotop-color: var(--text-color);
@@ -37,7 +38,7 @@
   --sidebar-bg: #0e1830;
   --sidebar-border-color: #0c152a;
   --sidebar-muted-color: #d1d7df;
-  --sidebar-active-color: #05ffea ;
+  --sidebar-active-color: #05ffea;
   --sidebar-hover-bg: #132b3a;
   --sidebar-btn-bg: #132b3a;
   --sidebar-btn-color: #d1d7df;
@@ -53,18 +54,18 @@
   /* Home page */
   --post-list-text-color: rgb(176, 177, 175);
   --btn-patinator-text-color: var(--text-color);
-  --btn-paginator-hover-color: #e61111;
+  --btn-paginator-hover-color: #132b3a;
 
   /* Posts */
-  --toc-highlight: rgb(127, 211, 17);
+  --toc-highlight: #05ffea;
   --toc-popup-border-color: #373737;
   --tag-hover: rgb(43, 56, 62);
   --tb-odd-bg: #252526; /* odd rows of the posts' table */
   --tb-even-bg: rgb(31, 31, 34); /* even rows of the posts' table */
   --tb-border-color: var(--tb-odd-bg);
   --footnote-target-bg: rgb(63, 81, 181);
-  --btn-share-color: #6c757d;
-  --btn-share-hover-color: #bfc1ca;
+  --btn-share-color: #d1d7df;
+  --btn-share-hover-color: #05ffea;
   --card-bg: #1c233a;
   --card-hovor-bg: #132b3a;
   --card-shadow: rgb(21, 21, 21, 0.72) 0 6px 18px 0,
@@ -299,5 +300,14 @@
 
   .highlight .ss {
     color: #90a959;
+  }
+
+  /* Overwrite bootstrap outline button */
+  .btn.btn-outline-primary {
+    &:not(.disabled):hover {
+      border-color: #132b3a !important;
+      background-color: #132b3a !important;
+      color: #05ffea !important;
+    }
   }
 }
