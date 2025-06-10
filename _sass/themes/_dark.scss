@@ -142,10 +142,11 @@
   #archives li:nth-child(odd) {
     background-image: linear-gradient(
       to right,
-      #0F222E,
+      #0b1226
+      /* #0F222E,
       #102437,
       #102437,
-      #0F222E
+      #0F222E */ /* uncomment this if you want the gradient back */
     );
     border-radius: 15px;
   }
@@ -308,6 +309,7 @@
       border-color: #132b3a !important;
       background-color: #132b3a !important;
       color: #05ffea !important;
+      transition: none !important;
     }
   }
 }

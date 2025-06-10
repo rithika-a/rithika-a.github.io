@@ -60,6 +60,7 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
     overflow: hidden;
     box-shadow: var(--avatar-border-color) 0 0 0 2px;
     transform: translateZ(0); /* fixed the zoom in Safari */
+    margin: 0 auto;
 
     @include bp.sm {
       width: 7rem;
@@ -79,9 +80,10 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
     @include mx.mt-mb(2.5rem);
     @extend %clickable-transition;
 
-    padding-left: 2.5rem;
+    padding-left: 1.25rem;
     padding-right: 1.25rem;
     width: 100%;
+    text-align: center;
 
     @include bp.lg {
       margin-top: 3rem;
@@ -90,7 +92,8 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
     @include bp.xxxl {
       margin-top: 3.5rem;
       margin-bottom: 2.5rem;
-      padding-left: 3.5rem;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
     }
   }
 
@@ -105,7 +108,8 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
     letter-spacing: 0.25px;
     margin-top: 1.25rem;
     margin-bottom: 0.5rem;
-    width: fit-content;
+    width: 100%;
+    text-align: center;
     color: var(--site-title-color);
   }
 
@@ -118,6 +122,8 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    text-align: center;
+    font-style: normal !important;
   }
 
   ul {
@@ -176,13 +182,19 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
   }
 
   .sidebar-bottom {
-    padding-left: 2rem;
+    padding-left: 1rem;
     padding-right: 1rem;
     margin-bottom: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: v.$sb-btn-gap;
 
     @include bp.xxxl {
-      padding-left: 2.75rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
       margin-bottom: 1.75rem;
+      gap: v.$sb-btn-gap-lg;
     }
 
     $btn-size: 1.75rem;
@@ -195,7 +207,7 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
       color: var(--sidebar-btn-color);
       background-color: var(--sidebar-btn-bg);
       text-align: center;
-      display: flex;
+      display: inline-flex;
       align-items: center;
       justify-content: center;
 
@@ -216,12 +228,6 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
       @extend %button;
       @extend %sidebar-link-hover;
       @extend %clickable-transition;
-
-      margin-right: v.$sb-btn-gap;
-
-      @include bp.xxxl {
-        margin-right: v.$sb-btn-gap-lg;
-      }
     }
 
     i {
@@ -232,11 +238,6 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
       @extend %button;
       @extend %sidebar-links;
       @extend %sidebar-link-hover;
-      margin-right: v.$sb-btn-gap;
-
-      @include bp.xxxl {
-        margin-right: v.$sb-btn-gap-lg;
-      }
     }
   } /* .sidebar-bottom */
 } /* #sidebar */

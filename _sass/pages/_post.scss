@@ -151,10 +151,8 @@ header {
 }
 
 .post-navigation {
-  @include bp.lt(bp.get(lg)) {
-    @include mx.pl-pr(0);
-    @include mx.ml-mr(-0.5rem);
-  }
+  @include mx.pl-pr(0);
+  @include mx.ml-mr(-0.5rem);
 
   .btn {
     @extend %-btn-post-nav;
@@ -164,8 +162,14 @@ header {
     }
 
     &:hover {
-      &:not(.disabled)::before {
-        color: whitesmoke;
+      &:not(.disabled) {
+        color: var(--link-hover-color) !important;
+        &::before {
+          color: var(--link-hover-color) !important;
+        }
+        p {
+          color: var(--link-hover-color) !important;
+        }
       }
     }
 
