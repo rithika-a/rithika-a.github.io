@@ -69,14 +69,14 @@
       @extend %text-ellipsis;
 
       &:nth-child(odd) {
-        background-color: var(--main-bg, #ffffff);
+        background-color: var(--main-bg);
         background-image: linear-gradient(
           to left,
-          #ffffff,
-          #fbfbfb,
-          #fbfbfb,
-          #fbfbfb,
-          #ffffff
+          #fefaf7,
+          #fefaf7,
+          #fefaf7,
+          #fefaf7,
+          #fefaf7
         );
       }
 
